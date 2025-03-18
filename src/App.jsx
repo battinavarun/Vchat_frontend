@@ -5,9 +5,12 @@ import "./App.css";
 
 //!Function that must return a promise (useMutation)
 const makeRequestAPI = async (prompt) => {
-  const res = await axios.post("https://vchat-backend-brfn.onrender.com/generate", {
-    prompt,
-  });
+  const res = await axios.post(
+    "https://vchat-backend-brfn.onrender.com/generate",
+    {
+      prompt,
+    }
+  );
   return res.data;
 };
 
